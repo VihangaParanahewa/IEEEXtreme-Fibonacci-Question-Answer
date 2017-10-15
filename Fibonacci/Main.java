@@ -4,8 +4,8 @@ import java.io.*;
 import java.util.Scanner;
 // Please name your class Main
 class Main {
-   
- private static BigInteger[] answers;
+
+    private static BigInteger[] answers;
 
     private static BigInteger one;
     private static BigInteger zero;
@@ -21,17 +21,17 @@ class Main {
         }
         return num;
     }
-    private static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
-    
-   
 
-	public static void main (String[] args)  {
-	   
-          int n;
+    private static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
+
+
+    public static void main(String[] args) {
+
+        int n;
         long time, newTime;
         BigInteger answer;
-       // answer = fastFibonacci(20000);
-        
+        // answer = fastFibonacci(20000);
+
 
         Scanner scanner = new Scanner(System.in);
 
@@ -44,8 +44,12 @@ class Main {
 
         for (int i = 0; i < nooftestcases; i++) {
             answer = fastFibonacci(ar[i]);
-         //   System.out.println(answer);
+            //   System.out.println(answer);
             System.out.println(answer.mod(BigInteger.valueOf(10)));
         }
+
+
+    }
+}
                
          
